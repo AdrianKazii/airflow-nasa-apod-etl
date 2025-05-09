@@ -1,3 +1,8 @@
+### Project Overview: Airflow TLS Pipeline with Postgres and API Integration
+This project involves creating an ETL (Extract, Transform, Load) pipeline using Apache Airflow. The pipeline extracts data from an external API (in this case, NASA's Astronomy Picture of the Day (APOD) API), transforms the data, and loads it into a Postgres database. The entire workflow is orchestrated by Airflow, a platform that allows scheduling, monitoring, and managing workflow.
+
+The project leverages Docker to run Airflow and Postgres as services, ensuring an isolated and reproducible environment. We also utilize Airflow hooks and operators to handle the ETL process efficiently.
+
 ### 📸 Screenshots & Demo
 
 This section presents screenshots from the deployed ETL pipeline built with Apache Airflow and connected to a managed PostgreSQL instance on AWS (RDS).  
@@ -56,11 +61,6 @@ Image of the Astronomy Picture of the Day, retrieved from the NASA API and store
 ![RDS Console](screens/Screenshot%202025-05-09%20at%2016.43.47.png)
 
 Screenshot from the AWS Console confirming that the Postgres database instance (`db.t4g.micro`) is up and running in the Stockholm (eu-north-1) region.
-
-### Project Overview: Airflow TLS Pipeline with Postgres and API Integration
-This project involves creating an ETL (Extract, Transform, Load) pipeline using Apache Airflow. The pipeline extracts data from an external API (in this case, NASA's Astronomy Picture of the Day (APOD) API), transforms the data, and loads it into a Postgres database. The entire workflow is orchestrated by Airflow, a platform that allows scheduling, monitoring, and managing workflow.
-
-The project leverages Docker to run Airflow and Postgres as services, ensuring an isolated and reproducible environment. We also utilize Airflow hooks and operators to handle the ETL process efficiently.
 
 ### Key Components of the Project:
 
